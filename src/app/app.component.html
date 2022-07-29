@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TotemTi</title>
+</head>
+
+<body>
+
+    <header>
+      <nav>
+      <div class="top">
+        <div class="esquerdo">
+          <img id="logo" src="/assets/img/logo.png" alt="TotemTi">
+          <li>
+            <h1 id="sistema-de-onboardin">Sistema de Onboarding </h1>
+            <h2 id="sistema-de-onboardin">Treinamento</h2>
+
+          </li>
+        </div>
+        <div class="back">
+
+        </div>
+      </div>
+      </nav>
+      <p-menubar class="menuBar" [model]="items"></p-menubar>
+      <br>
+
+    </header>
+
+    <main>
+      <section>
+        <span class="p-float-label">
+          <input id="in_title" type="text" [(ngModel)]="title" pInputText>
+          <label for="in_title">Title</label>
+        </span>
+        <br>
+        <button type="button" pButton label="Click"></button>
+        <p>{{title}}</p>
+        <button pButton pRipple label="Adicionar" class="p-button-outlined mr-2" icon="pi pi-user-plus"></button>
+        <button pButton pRipple label="Salvar" icon="pi pi-check"></button>
+      </section>
+
+      <section>
+
+      </section>
+
+     </main>
+
+  <footer class="footer">
+    <img id="logo2" src="/assets/img/logo2.png" alt="TotemTi">
+  </footer>
+</body>
+</html>
